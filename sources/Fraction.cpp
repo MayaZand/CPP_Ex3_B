@@ -11,8 +11,14 @@ Fraction:: Fraction(int numerator, int denominator)
         throw invalid_argument ("denominator can't be 0!");
     }
 
-    this->denominator=denominator;
-    this->numerator=numerator;
+    
+    int gcd_num = __gcd(numerator, denominator);
+    numerator /= gcd_num;
+    denominator /= gcd_num;
+
+    this->numerator = numerator;
+    this->denominator = denominator;
+
 
     if (this->denominator < 0)
     {

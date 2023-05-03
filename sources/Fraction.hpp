@@ -16,7 +16,7 @@ namespace ariel
 
     /*constructors, copy constructor and destructor: */
     public:
-    Fraction(); // default constructor - ???
+    Fraction(); // default constructor 
     Fraction(int numerator, int denominator);
     Fraction(float number); // this constructor will convert float into a Fraction
 
@@ -33,9 +33,6 @@ namespace ariel
     @return the denominator of the Fraction.
     */
     int getDenominator() const;
-
-
-
 
     /*
     this methods add two fractions and return their sum as another fraction in reduced form. 
@@ -115,11 +112,6 @@ namespace ariel
     friend bool operator>=(const Fraction& fraction1, const Fraction& fraction2);
 
 
-
-
-
-
-/////////////////////////////////////////////////////////////////////////////////
     /*
     this method adds 1 to the fraction - prefix implementation
     */
@@ -142,16 +134,17 @@ namespace ariel
 
     /*
     this method prints a fraction to an output stream in the format “numerator/denominator”.
-    @param os is the output stream
+    @param ostream is the output stream
     */
     friend ostream& operator<<(ostream& ostream, const Fraction& other);
 
     /*
     this method reads a fraction from an input stream by taking two integers as input.
-    @param is is the input stream
+    @param istream is the input stream
     */
-    friend istream& operator>>(std::istream& istream, const Fraction& other);
+    friend istream& operator>>(std::istream& istream, Fraction& other);
 
+    // float fracToFloat();
    }; 
 
 }

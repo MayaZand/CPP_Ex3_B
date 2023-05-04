@@ -1,7 +1,6 @@
 /*
 During the preperation of this assignment I used the internet and chat GPT, and got help from Roy Simanovich and Ofir Shitrit.
 */
-#pragma once
 #include <iostream>
 #include <numeric>
 #include <cmath>

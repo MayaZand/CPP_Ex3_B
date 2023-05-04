@@ -142,7 +142,7 @@ namespace ariel
       this method reads a fraction from an input stream by taking two integers as input.
       @param istream is the input stream
       */
-      friend istream &operator>>(std::istream &istream, Fraction &other);
+      friend istream &operator>>(istream &istream, Fraction &other);
       
    };
 

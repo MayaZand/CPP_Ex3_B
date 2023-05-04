@@ -30,12 +30,6 @@ Fraction::Fraction(float number)
 
     this->numerator = numerator;
     this->denominator = denominator;
-
-    if (this->denominator < 0)
-    {
-        this->numerator *= -1;
-        this->denominator *= -1;
-    }
     
     reduceFrac();
 }
